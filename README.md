@@ -1,4 +1,4 @@
-# Crash Data API Python API library
+# Crash Data API Python library
 
 [![PyPI version](https://img.shields.io/pypi/v/crash_data_api.svg)](https://pypi.org/project/crash_data_api/)
 
