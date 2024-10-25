@@ -36,8 +36,8 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/stainless-sdks/crash-data-api-python"
-Repository = "https://github.com/stainless-sdks/crash-data-api-python"
+Homepage = "https://github.com/Filimoa/crash-data-sdk"
+Repository = "https://github.com/Filimoa/crash-data-sdk"
 
 
 
@@ -123,7 +123,7 @@ path = "README.md"
 [[tool.hatch.metadata.hooks.fancy-pypi-readme.substitutions]]
 # replace relative links with absolute links
 pattern = '\[(.+?)\]\(((?!https?://)\S+?)\)'
-replacement = '[\1](https://github.com/stainless-sdks/crash-data-api-python/tree/main/\g<2>)'
+replacement = '[\1](https://github.com/Filimoa/crash-data-sdk/tree/main/\g<2>)'
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
