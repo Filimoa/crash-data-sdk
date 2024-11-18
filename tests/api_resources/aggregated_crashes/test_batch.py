@@ -107,25 +107,7 @@ class TestBatch:
                         "long": -125,
                     },
                     "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
-                {
-                    "distance_km": 2,
-                    "end_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
-                {
-                    "distance_km": 2,
-                    "end_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
+                }
             ],
         )
         assert_matches_type(BatchJobStatus, batch, path=["response"])
@@ -142,25 +124,7 @@ class TestBatch:
                         "long": -125,
                     },
                     "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
-                {
-                    "distance_km": 2,
-                    "end_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
-                {
-                    "distance_km": 2,
-                    "end_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
+                }
             ],
         )
 
@@ -181,25 +145,7 @@ class TestBatch:
                         "long": -125,
                     },
                     "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
-                {
-                    "distance_km": 2,
-                    "end_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
-                {
-                    "distance_km": 2,
-                    "end_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
+                }
             ],
         ) as response:
             assert not response.is_closed
@@ -302,25 +248,7 @@ class TestAsyncBatch:
                         "long": -125,
                     },
                     "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
-                {
-                    "distance_km": 2,
-                    "end_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
-                {
-                    "distance_km": 2,
-                    "end_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
+                }
             ],
         )
         assert_matches_type(BatchJobStatus, batch, path=["response"])
@@ -337,25 +265,7 @@ class TestAsyncBatch:
                         "long": -125,
                     },
                     "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
-                {
-                    "distance_km": 2,
-                    "end_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
-                {
-                    "distance_km": 2,
-                    "end_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
+                }
             ],
         )
 
@@ -376,25 +286,7 @@ class TestAsyncBatch:
                         "long": -125,
                     },
                     "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
-                {
-                    "distance_km": 2,
-                    "end_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
-                {
-                    "distance_km": 2,
-                    "end_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "start_date": parse_datetime("2019-12-27T18:11:19.117Z"),
-                },
+                }
             ],
         ) as response:
             assert not response.is_closed
