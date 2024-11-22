@@ -227,11 +227,13 @@ Note that requests that time out are [retried twice by default](#retries).
 
 We use the standard library [`logging`](https://docs.python.org/3/library/logging.html) module.
 
-You can enable logging by setting the environment variable `CRASH_DATA_API_LOG` to `debug`.
+You can enable logging by setting the environment variable `CRASH_DATA_API_LOG` to `info`.
 
 ```shell
-$ export CRASH_DATA_API_LOG=debug
+$ export CRASH_DATA_API_LOG=info
 ```
+
+Or to `debug` for more verbose logging.
 
 ### How to tell whether `None` means `null` or missing
 
