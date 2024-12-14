@@ -8,7 +8,7 @@ from typing_extensions import Self, override
 
 import httpx
 
-from . import _exceptions
+from . import resources, _exceptions
 from ._qs import Querystring
 from ._types import (
     NOT_GIVEN,
@@ -24,7 +24,6 @@ from ._utils import (
     get_async_library,
 )
 from ._version import __version__
-from .resources import api_keys
 from ._streaming import Stream as Stream, AsyncStream as AsyncStream
 from ._exceptions import APIStatusError, CrashDataAPIError
 from ._base_client import (
@@ -32,17 +31,13 @@ from ._base_client import (
     SyncAPIClient,
     AsyncAPIClient,
 )
-from .resources.aggregated_crashes import aggregated_crashes
-from .resources.ca_garaging_risk_scores import ca_garaging_risk_scores
-from .resources.ppa_garaging_risk_scores import ppa_garaging_risk_scores
-from .resources.ca_telematics_risk_scores import ca_telematics_risk_scores
-from .resources.ppa_telematics_risk_scores import ppa_telematics_risk_scores
 
 __all__ = [
     "Timeout",
     "Transport",
     "ProxiesTypes",
     "RequestOptions",
+    "resources",
     "CrashDataAPI",
     "AsyncCrashDataAPI",
     "Client",
@@ -51,12 +46,12 @@ __all__ = [
 
 
 class CrashDataAPI(SyncAPIClient):
-    aggregated_crashes: aggregated_crashes.AggregatedCrashesResource
-    ca_garaging_risk_scores: ca_garaging_risk_scores.CaGaragingRiskScoresResource
-    ca_telematics_risk_scores: ca_telematics_risk_scores.CaTelematicsRiskScoresResource
-    ppa_garaging_risk_scores: ppa_garaging_risk_scores.PpaGaragingRiskScoresResource
-    ppa_telematics_risk_scores: ppa_telematics_risk_scores.PpaTelematicsRiskScoresResource
-    api_keys: api_keys.APIKeysResource
+    aggregated_crashes: resources.AggregatedCrashesResource
+    ca_garaging_risk_scores: resources.CaGaragingRiskScoresResource
+    ca_telematics_risk_scores: resources.CaTelematicsRiskScoresResource
+    ppa_garaging_risk_scores: resources.PpaGaragingRiskScoresResource
+    ppa_telematics_risk_scores: resources.PpaTelematicsRiskScoresResource
+    api_keys: resources.APIKeysResource
     with_raw_response: CrashDataAPIWithRawResponse
     with_streaming_response: CrashDataAPIWithStreamedResponse
 
@@ -126,12 +121,12 @@ class CrashDataAPI(SyncAPIClient):
             _strict_response_validation=_strict_response_validation,
         )
 
-        self.aggregated_crashes = aggregated_crashes.AggregatedCrashesResource(self)
-        self.ca_garaging_risk_scores = ca_garaging_risk_scores.CaGaragingRiskScoresResource(self)
-        self.ca_telematics_risk_scores = ca_telematics_risk_scores.CaTelematicsRiskScoresResource(self)
-        self.ppa_garaging_risk_scores = ppa_garaging_risk_scores.PpaGaragingRiskScoresResource(self)
-        self.ppa_telematics_risk_scores = ppa_telematics_risk_scores.PpaTelematicsRiskScoresResource(self)
-        self.api_keys = api_keys.APIKeysResource(self)
+        self.aggregated_crashes = resources.AggregatedCrashesResource(self)
+        self.ca_garaging_risk_scores = resources.CaGaragingRiskScoresResource(self)
+        self.ca_telematics_risk_scores = resources.CaTelematicsRiskScoresResource(self)
+        self.ppa_garaging_risk_scores = resources.PpaGaragingRiskScoresResource(self)
+        self.ppa_telematics_risk_scores = resources.PpaTelematicsRiskScoresResource(self)
+        self.api_keys = resources.APIKeysResource(self)
         self.with_raw_response = CrashDataAPIWithRawResponse(self)
         self.with_streaming_response = CrashDataAPIWithStreamedResponse(self)
 
@@ -243,12 +238,12 @@ class CrashDataAPI(SyncAPIClient):
 
 
 class AsyncCrashDataAPI(AsyncAPIClient):
-    aggregated_crashes: aggregated_crashes.AsyncAggregatedCrashesResource
-    ca_garaging_risk_scores: ca_garaging_risk_scores.AsyncCaGaragingRiskScoresResource
-    ca_telematics_risk_scores: ca_telematics_risk_scores.AsyncCaTelematicsRiskScoresResource
-    ppa_garaging_risk_scores: ppa_garaging_risk_scores.AsyncPpaGaragingRiskScoresResource
-    ppa_telematics_risk_scores: ppa_telematics_risk_scores.AsyncPpaTelematicsRiskScoresResource
-    api_keys: api_keys.AsyncAPIKeysResource
+    aggregated_crashes: resources.AsyncAggregatedCrashesResource
+    ca_garaging_risk_scores: resources.AsyncCaGaragingRiskScoresResource
+    ca_telematics_risk_scores: resources.AsyncCaTelematicsRiskScoresResource
+    ppa_garaging_risk_scores: resources.AsyncPpaGaragingRiskScoresResource
+    ppa_telematics_risk_scores: resources.AsyncPpaTelematicsRiskScoresResource
+    api_keys: resources.AsyncAPIKeysResource
     with_raw_response: AsyncCrashDataAPIWithRawResponse
     with_streaming_response: AsyncCrashDataAPIWithStreamedResponse
 
@@ -318,12 +313,12 @@ class AsyncCrashDataAPI(AsyncAPIClient):
             _strict_response_validation=_strict_response_validation,
         )
 
-        self.aggregated_crashes = aggregated_crashes.AsyncAggregatedCrashesResource(self)
-        self.ca_garaging_risk_scores = ca_garaging_risk_scores.AsyncCaGaragingRiskScoresResource(self)
-        self.ca_telematics_risk_scores = ca_telematics_risk_scores.AsyncCaTelematicsRiskScoresResource(self)
-        self.ppa_garaging_risk_scores = ppa_garaging_risk_scores.AsyncPpaGaragingRiskScoresResource(self)
-        self.ppa_telematics_risk_scores = ppa_telematics_risk_scores.AsyncPpaTelematicsRiskScoresResource(self)
-        self.api_keys = api_keys.AsyncAPIKeysResource(self)
+        self.aggregated_crashes = resources.AsyncAggregatedCrashesResource(self)
+        self.ca_garaging_risk_scores = resources.AsyncCaGaragingRiskScoresResource(self)
+        self.ca_telematics_risk_scores = resources.AsyncCaTelematicsRiskScoresResource(self)
+        self.ppa_garaging_risk_scores = resources.AsyncPpaGaragingRiskScoresResource(self)
+        self.ppa_telematics_risk_scores = resources.AsyncPpaTelematicsRiskScoresResource(self)
+        self.api_keys = resources.AsyncAPIKeysResource(self)
         self.with_raw_response = AsyncCrashDataAPIWithRawResponse(self)
         self.with_streaming_response = AsyncCrashDataAPIWithStreamedResponse(self)
 
@@ -436,90 +431,76 @@ class AsyncCrashDataAPI(AsyncAPIClient):
 
 class CrashDataAPIWithRawResponse:
     def __init__(self, client: CrashDataAPI) -> None:
-        self.aggregated_crashes = aggregated_crashes.AggregatedCrashesResourceWithRawResponse(client.aggregated_crashes)
-        self.ca_garaging_risk_scores = ca_garaging_risk_scores.CaGaragingRiskScoresResourceWithRawResponse(
+        self.aggregated_crashes = resources.AggregatedCrashesResourceWithRawResponse(client.aggregated_crashes)
+        self.ca_garaging_risk_scores = resources.CaGaragingRiskScoresResourceWithRawResponse(
             client.ca_garaging_risk_scores
         )
-        self.ca_telematics_risk_scores = ca_telematics_risk_scores.CaTelematicsRiskScoresResourceWithRawResponse(
+        self.ca_telematics_risk_scores = resources.CaTelematicsRiskScoresResourceWithRawResponse(
             client.ca_telematics_risk_scores
         )
-        self.ppa_garaging_risk_scores = ppa_garaging_risk_scores.PpaGaragingRiskScoresResourceWithRawResponse(
+        self.ppa_garaging_risk_scores = resources.PpaGaragingRiskScoresResourceWithRawResponse(
             client.ppa_garaging_risk_scores
         )
-        self.ppa_telematics_risk_scores = ppa_telematics_risk_scores.PpaTelematicsRiskScoresResourceWithRawResponse(
+        self.ppa_telematics_risk_scores = resources.PpaTelematicsRiskScoresResourceWithRawResponse(
             client.ppa_telematics_risk_scores
         )
-        self.api_keys = api_keys.APIKeysResourceWithRawResponse(client.api_keys)
+        self.api_keys = resources.APIKeysResourceWithRawResponse(client.api_keys)
 
 
 class AsyncCrashDataAPIWithRawResponse:
     def __init__(self, client: AsyncCrashDataAPI) -> None:
-        self.aggregated_crashes = aggregated_crashes.AsyncAggregatedCrashesResourceWithRawResponse(
-            client.aggregated_crashes
-        )
-        self.ca_garaging_risk_scores = ca_garaging_risk_scores.AsyncCaGaragingRiskScoresResourceWithRawResponse(
+        self.aggregated_crashes = resources.AsyncAggregatedCrashesResourceWithRawResponse(client.aggregated_crashes)
+        self.ca_garaging_risk_scores = resources.AsyncCaGaragingRiskScoresResourceWithRawResponse(
             client.ca_garaging_risk_scores
         )
-        self.ca_telematics_risk_scores = ca_telematics_risk_scores.AsyncCaTelematicsRiskScoresResourceWithRawResponse(
+        self.ca_telematics_risk_scores = resources.AsyncCaTelematicsRiskScoresResourceWithRawResponse(
             client.ca_telematics_risk_scores
         )
-        self.ppa_garaging_risk_scores = ppa_garaging_risk_scores.AsyncPpaGaragingRiskScoresResourceWithRawResponse(
+        self.ppa_garaging_risk_scores = resources.AsyncPpaGaragingRiskScoresResourceWithRawResponse(
             client.ppa_garaging_risk_scores
         )
-        self.ppa_telematics_risk_scores = (
-            ppa_telematics_risk_scores.AsyncPpaTelematicsRiskScoresResourceWithRawResponse(
-                client.ppa_telematics_risk_scores
-            )
+        self.ppa_telematics_risk_scores = resources.AsyncPpaTelematicsRiskScoresResourceWithRawResponse(
+            client.ppa_telematics_risk_scores
         )
-        self.api_keys = api_keys.AsyncAPIKeysResourceWithRawResponse(client.api_keys)
+        self.api_keys = resources.AsyncAPIKeysResourceWithRawResponse(client.api_keys)
 
 
 class CrashDataAPIWithStreamedResponse:
     def __init__(self, client: CrashDataAPI) -> None:
-        self.aggregated_crashes = aggregated_crashes.AggregatedCrashesResourceWithStreamingResponse(
-            client.aggregated_crashes
-        )
-        self.ca_garaging_risk_scores = ca_garaging_risk_scores.CaGaragingRiskScoresResourceWithStreamingResponse(
+        self.aggregated_crashes = resources.AggregatedCrashesResourceWithStreamingResponse(client.aggregated_crashes)
+        self.ca_garaging_risk_scores = resources.CaGaragingRiskScoresResourceWithStreamingResponse(
             client.ca_garaging_risk_scores
         )
-        self.ca_telematics_risk_scores = ca_telematics_risk_scores.CaTelematicsRiskScoresResourceWithStreamingResponse(
+        self.ca_telematics_risk_scores = resources.CaTelematicsRiskScoresResourceWithStreamingResponse(
             client.ca_telematics_risk_scores
         )
-        self.ppa_garaging_risk_scores = ppa_garaging_risk_scores.PpaGaragingRiskScoresResourceWithStreamingResponse(
+        self.ppa_garaging_risk_scores = resources.PpaGaragingRiskScoresResourceWithStreamingResponse(
             client.ppa_garaging_risk_scores
         )
-        self.ppa_telematics_risk_scores = (
-            ppa_telematics_risk_scores.PpaTelematicsRiskScoresResourceWithStreamingResponse(
-                client.ppa_telematics_risk_scores
-            )
+        self.ppa_telematics_risk_scores = resources.PpaTelematicsRiskScoresResourceWithStreamingResponse(
+            client.ppa_telematics_risk_scores
         )
-        self.api_keys = api_keys.APIKeysResourceWithStreamingResponse(client.api_keys)
+        self.api_keys = resources.APIKeysResourceWithStreamingResponse(client.api_keys)
 
 
 class AsyncCrashDataAPIWithStreamedResponse:
     def __init__(self, client: AsyncCrashDataAPI) -> None:
-        self.aggregated_crashes = aggregated_crashes.AsyncAggregatedCrashesResourceWithStreamingResponse(
+        self.aggregated_crashes = resources.AsyncAggregatedCrashesResourceWithStreamingResponse(
             client.aggregated_crashes
         )
-        self.ca_garaging_risk_scores = ca_garaging_risk_scores.AsyncCaGaragingRiskScoresResourceWithStreamingResponse(
+        self.ca_garaging_risk_scores = resources.AsyncCaGaragingRiskScoresResourceWithStreamingResponse(
             client.ca_garaging_risk_scores
         )
-        self.ca_telematics_risk_scores = (
-            ca_telematics_risk_scores.AsyncCaTelematicsRiskScoresResourceWithStreamingResponse(
-                client.ca_telematics_risk_scores
-            )
+        self.ca_telematics_risk_scores = resources.AsyncCaTelematicsRiskScoresResourceWithStreamingResponse(
+            client.ca_telematics_risk_scores
         )
-        self.ppa_garaging_risk_scores = (
-            ppa_garaging_risk_scores.AsyncPpaGaragingRiskScoresResourceWithStreamingResponse(
-                client.ppa_garaging_risk_scores
-            )
+        self.ppa_garaging_risk_scores = resources.AsyncPpaGaragingRiskScoresResourceWithStreamingResponse(
+            client.ppa_garaging_risk_scores
         )
-        self.ppa_telematics_risk_scores = (
-            ppa_telematics_risk_scores.AsyncPpaTelematicsRiskScoresResourceWithStreamingResponse(
-                client.ppa_telematics_risk_scores
-            )
+        self.ppa_telematics_risk_scores = resources.AsyncPpaTelematicsRiskScoresResourceWithStreamingResponse(
+            client.ppa_telematics_risk_scores
         )
-        self.api_keys = api_keys.AsyncAPIKeysResourceWithStreamingResponse(client.api_keys)
+        self.api_keys = resources.AsyncAPIKeysResourceWithStreamingResponse(client.api_keys)
 
 
 Client = CrashDataAPI
