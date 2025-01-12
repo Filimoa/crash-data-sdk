@@ -30,21 +30,7 @@ class TestPpaGaragingRiskScores:
                         "long": -125,
                     },
                     "vehicle_id": "vehicle-123",
-                },
-                {
-                    "garaging_location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "vehicle_id": "vehicle-123",
-                },
-                {
-                    "garaging_location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "vehicle_id": "vehicle-123",
-                },
+                }
             ],
         )
         assert_matches_type(GaragingRiskScoreResponse, ppa_garaging_risk_score, path=["response"])
@@ -62,23 +48,7 @@ class TestPpaGaragingRiskScores:
                         "coordinate_system": "WGS84",
                     },
                     "vehicle_id": "vehicle-123",
-                },
-                {
-                    "garaging_location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                        "coordinate_system": "WGS84",
-                    },
-                    "vehicle_id": "vehicle-123",
-                },
-                {
-                    "garaging_location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                        "coordinate_system": "WGS84",
-                    },
-                    "vehicle_id": "vehicle-123",
-                },
+                }
             ],
             version="v1",
         )
@@ -96,21 +66,7 @@ class TestPpaGaragingRiskScores:
                         "long": -125,
                     },
                     "vehicle_id": "vehicle-123",
-                },
-                {
-                    "garaging_location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "vehicle_id": "vehicle-123",
-                },
-                {
-                    "garaging_location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "vehicle_id": "vehicle-123",
-                },
+                }
             ],
         )
 
@@ -131,21 +87,7 @@ class TestPpaGaragingRiskScores:
                         "long": -125,
                     },
                     "vehicle_id": "vehicle-123",
-                },
-                {
-                    "garaging_location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "vehicle_id": "vehicle-123",
-                },
-                {
-                    "garaging_location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "vehicle_id": "vehicle-123",
-                },
+                }
             ],
         ) as response:
             assert not response.is_closed
@@ -172,21 +114,7 @@ class TestAsyncPpaGaragingRiskScores:
                         "long": -125,
                     },
                     "vehicle_id": "vehicle-123",
-                },
-                {
-                    "garaging_location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "vehicle_id": "vehicle-123",
-                },
-                {
-                    "garaging_location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "vehicle_id": "vehicle-123",
-                },
+                }
             ],
         )
         assert_matches_type(GaragingRiskScoreResponse, ppa_garaging_risk_score, path=["response"])
@@ -204,23 +132,7 @@ class TestAsyncPpaGaragingRiskScores:
                         "coordinate_system": "WGS84",
                     },
                     "vehicle_id": "vehicle-123",
-                },
-                {
-                    "garaging_location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                        "coordinate_system": "WGS84",
-                    },
-                    "vehicle_id": "vehicle-123",
-                },
-                {
-                    "garaging_location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                        "coordinate_system": "WGS84",
-                    },
-                    "vehicle_id": "vehicle-123",
-                },
+                }
             ],
             version="v1",
         )
@@ -238,21 +150,7 @@ class TestAsyncPpaGaragingRiskScores:
                         "long": -125,
                     },
                     "vehicle_id": "vehicle-123",
-                },
-                {
-                    "garaging_location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "vehicle_id": "vehicle-123",
-                },
-                {
-                    "garaging_location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "vehicle_id": "vehicle-123",
-                },
+                }
             ],
         )
 
@@ -273,21 +171,7 @@ class TestAsyncPpaGaragingRiskScores:
                         "long": -125,
                     },
                     "vehicle_id": "vehicle-123",
-                },
-                {
-                    "garaging_location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "vehicle_id": "vehicle-123",
-                },
-                {
-                    "garaging_location": {
-                        "lat": 24.396308,
-                        "long": -125,
-                    },
-                    "vehicle_id": "vehicle-123",
-                },
+                }
             ],
         ) as response:
             assert not response.is_closed

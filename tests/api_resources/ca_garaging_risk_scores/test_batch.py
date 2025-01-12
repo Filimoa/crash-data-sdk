@@ -109,77 +109,9 @@ class TestBatch:
                                 "long": -125,
                             },
                             "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
+                        }
                     ],
-                },
-                {
-                    "policy_holder_id": "policy-holder-123",
-                    "policy_start": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "vehicles": [
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                    ],
-                },
-                {
-                    "policy_holder_id": "policy-holder-123",
-                    "policy_start": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "vehicles": [
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                    ],
-                },
+                }
             ],
         )
         assert_matches_type(BatchJobStatus, batch, path=["response"])
@@ -198,77 +130,9 @@ class TestBatch:
                                 "long": -125,
                             },
                             "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
+                        }
                     ],
-                },
-                {
-                    "policy_holder_id": "policy-holder-123",
-                    "policy_start": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "vehicles": [
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                    ],
-                },
-                {
-                    "policy_holder_id": "policy-holder-123",
-                    "policy_start": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "vehicles": [
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                    ],
-                },
+                }
             ],
         )
 
@@ -291,77 +155,9 @@ class TestBatch:
                                 "long": -125,
                             },
                             "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
+                        }
                     ],
-                },
-                {
-                    "policy_holder_id": "policy-holder-123",
-                    "policy_start": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "vehicles": [
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                    ],
-                },
-                {
-                    "policy_holder_id": "policy-holder-123",
-                    "policy_start": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "vehicles": [
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                    ],
-                },
+                }
             ],
         ) as response:
             assert not response.is_closed
@@ -466,77 +262,9 @@ class TestAsyncBatch:
                                 "long": -125,
                             },
                             "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
+                        }
                     ],
-                },
-                {
-                    "policy_holder_id": "policy-holder-123",
-                    "policy_start": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "vehicles": [
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                    ],
-                },
-                {
-                    "policy_holder_id": "policy-holder-123",
-                    "policy_start": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "vehicles": [
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                    ],
-                },
+                }
             ],
         )
         assert_matches_type(BatchJobStatus, batch, path=["response"])
@@ -555,77 +283,9 @@ class TestAsyncBatch:
                                 "long": -125,
                             },
                             "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
+                        }
                     ],
-                },
-                {
-                    "policy_holder_id": "policy-holder-123",
-                    "policy_start": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "vehicles": [
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                    ],
-                },
-                {
-                    "policy_holder_id": "policy-holder-123",
-                    "policy_start": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "vehicles": [
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                    ],
-                },
+                }
             ],
         )
 
@@ -648,77 +308,9 @@ class TestAsyncBatch:
                                 "long": -125,
                             },
                             "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
+                        }
                     ],
-                },
-                {
-                    "policy_holder_id": "policy-holder-123",
-                    "policy_start": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "vehicles": [
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                    ],
-                },
-                {
-                    "policy_holder_id": "policy-holder-123",
-                    "policy_start": parse_datetime("2019-12-27T18:11:19.117Z"),
-                    "vehicles": [
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                        {
-                            "garaging_location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "vehicle_id": "vehicle-123",
-                        },
-                    ],
-                },
+                }
             ],
         ) as response:
             assert not response.is_closed

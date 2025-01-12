@@ -31,76 +31,10 @@ class TestCaTelematicsRiskScores:
                                 "long": -125,
                             },
                             "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
+                        }
                     ],
                     "vehicle_id": "vehicle-123",
-                },
-                {
-                    "events": [
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                    ],
-                    "vehicle_id": "vehicle-123",
-                },
-                {
-                    "events": [
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                    ],
-                    "vehicle_id": "vehicle-123",
-                },
+                }
             ],
         )
         assert_matches_type(TelematicsRiskScoreResponse, ca_telematics_risk_score, path=["response"])
@@ -119,84 +53,10 @@ class TestCaTelematicsRiskScores:
                                 "coordinate_system": "WGS84",
                             },
                             "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                                "coordinate_system": "WGS84",
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                                "coordinate_system": "WGS84",
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
+                        }
                     ],
                     "vehicle_id": "vehicle-123",
-                },
-                {
-                    "events": [
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                                "coordinate_system": "WGS84",
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                                "coordinate_system": "WGS84",
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                                "coordinate_system": "WGS84",
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                    ],
-                    "vehicle_id": "vehicle-123",
-                },
-                {
-                    "events": [
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                                "coordinate_system": "WGS84",
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                                "coordinate_system": "WGS84",
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                                "coordinate_system": "WGS84",
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                    ],
-                    "vehicle_id": "vehicle-123",
-                },
+                }
             ],
             version="v1",
         )
@@ -215,76 +75,10 @@ class TestCaTelematicsRiskScores:
                                 "long": -125,
                             },
                             "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
+                        }
                     ],
                     "vehicle_id": "vehicle-123",
-                },
-                {
-                    "events": [
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                    ],
-                    "vehicle_id": "vehicle-123",
-                },
-                {
-                    "events": [
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                    ],
-                    "vehicle_id": "vehicle-123",
-                },
+                }
             ],
         )
 
@@ -306,76 +100,10 @@ class TestCaTelematicsRiskScores:
                                 "long": -125,
                             },
                             "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
+                        }
                     ],
                     "vehicle_id": "vehicle-123",
-                },
-                {
-                    "events": [
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                    ],
-                    "vehicle_id": "vehicle-123",
-                },
-                {
-                    "events": [
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                    ],
-                    "vehicle_id": "vehicle-123",
-                },
+                }
             ],
         ) as response:
             assert not response.is_closed
@@ -403,76 +131,10 @@ class TestAsyncCaTelematicsRiskScores:
                                 "long": -125,
                             },
                             "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
+                        }
                     ],
                     "vehicle_id": "vehicle-123",
-                },
-                {
-                    "events": [
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                    ],
-                    "vehicle_id": "vehicle-123",
-                },
-                {
-                    "events": [
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                    ],
-                    "vehicle_id": "vehicle-123",
-                },
+                }
             ],
         )
         assert_matches_type(TelematicsRiskScoreResponse, ca_telematics_risk_score, path=["response"])
@@ -491,84 +153,10 @@ class TestAsyncCaTelematicsRiskScores:
                                 "coordinate_system": "WGS84",
                             },
                             "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                                "coordinate_system": "WGS84",
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                                "coordinate_system": "WGS84",
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
+                        }
                     ],
                     "vehicle_id": "vehicle-123",
-                },
-                {
-                    "events": [
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                                "coordinate_system": "WGS84",
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                                "coordinate_system": "WGS84",
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                                "coordinate_system": "WGS84",
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                    ],
-                    "vehicle_id": "vehicle-123",
-                },
-                {
-                    "events": [
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                                "coordinate_system": "WGS84",
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                                "coordinate_system": "WGS84",
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                                "coordinate_system": "WGS84",
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                    ],
-                    "vehicle_id": "vehicle-123",
-                },
+                }
             ],
             version="v1",
         )
@@ -587,76 +175,10 @@ class TestAsyncCaTelematicsRiskScores:
                                 "long": -125,
                             },
                             "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
+                        }
                     ],
                     "vehicle_id": "vehicle-123",
-                },
-                {
-                    "events": [
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                    ],
-                    "vehicle_id": "vehicle-123",
-                },
-                {
-                    "events": [
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                    ],
-                    "vehicle_id": "vehicle-123",
-                },
+                }
             ],
         )
 
@@ -678,76 +200,10 @@ class TestAsyncCaTelematicsRiskScores:
                                 "long": -125,
                             },
                             "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
+                        }
                     ],
                     "vehicle_id": "vehicle-123",
-                },
-                {
-                    "events": [
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                    ],
-                    "vehicle_id": "vehicle-123",
-                },
-                {
-                    "events": [
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                        {
-                            "location": {
-                                "lat": 24.396308,
-                                "long": -125,
-                            },
-                            "timestamp": parse_datetime("2019-12-27T18:11:19.117Z"),
-                        },
-                    ],
-                    "vehicle_id": "vehicle-123",
-                },
+                }
             ],
         ) as response:
             assert not response.is_closed

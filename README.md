@@ -2,7 +2,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/crash_data_api.svg)](https://pypi.org/project/crash_data_api/)
 
-The Crash Data API Python library provides convenient access to the Crash Data API REST API from any Python 3.7+
+The Crash Data API Python library provides convenient access to the Crash Data API REST API from any Python 3.8+
 application. The library includes type definitions for all request params and response fields,
 and offers both synchronous and asynchronous clients powered by [httpx](https://github.com/encode/httpx).
 
@@ -15,8 +15,8 @@ The REST API documentation can be found on [docs.crash-data-api.com](https://doc
 ## Installation
 
 ```sh
-# install from this staging repo
-pip install git+ssh://git@github.com/stainless-sdks/crash-data-api-python.git
+# install from the production repo
+pip install git+ssh://git@github.com/Filimoa/crash-data-sdk.git
 ```
 
 > [!NOTE]
@@ -135,7 +135,7 @@ except crash_data_api.APIStatusError as e:
     print(e.response)
 ```
 
-Error codes are as followed:
+Error codes are as follows:
 
 | Status Code | Error Type                 |
 | ----------- | -------------------------- |
@@ -227,11 +227,13 @@ Note that requests that time out are [retried twice by default](#retries).
 
 We use the standard library [`logging`](https://docs.python.org/3/library/logging.html) module.
 
-You can enable logging by setting the environment variable `CRASH_DATA_API_LOG` to `debug`.
+You can enable logging by setting the environment variable `CRASH_DATA_API_LOG` to `info`.
 
 ```shell
-$ export CRASH_DATA_API_LOG=debug
+$ export CRASH_DATA_API_LOG=info
 ```
+
+Or to `debug` for more verbose logging.
 
 ### How to tell whether `None` means `null` or missing
 
@@ -270,9 +272,9 @@ aggregated_crash = response.parse()  # get the object that `aggregated_crashes.a
 print(aggregated_crash.distance_km)
 ```
 
-These methods return an [`APIResponse`](https://github.com/stainless-sdks/crash-data-api-python/tree/main/src/crash_data_api/_response.py) object.
+These methods return an [`APIResponse`](https://github.com/Filimoa/crash-data-sdk/tree/main/src/crash_data_api/_response.py) object.
 
-The async client returns an [`AsyncAPIResponse`](https://github.com/stainless-sdks/crash-data-api-python/tree/main/src/crash_data_api/_response.py) with the same structure, the only difference being `await`able methods for reading the response content.
+The async client returns an [`AsyncAPIResponse`](https://github.com/Filimoa/crash-data-sdk/tree/main/src/crash_data_api/_response.py) with the same structure, the only difference being `await`able methods for reading the response content.
 
 #### `.with_streaming_response`
 
@@ -307,8 +309,7 @@ If you need to access undocumented endpoints, params, or response properties, th
 #### Undocumented endpoints
 
 To make requests to undocumented endpoints, you can make requests using `client.get`, `client.post`, and other
-http verbs. Options on the client will be respected (such as retries) will be respected when making this
-request.
+http verbs. Options on the client will be respected (such as retries) when making this request.
 
 ```py
 import httpx
@@ -337,18 +338,19 @@ can also get all the extra fields on the Pydantic model as a dict with
 
 You can directly override the [httpx client](https://www.python-httpx.org/api/#client) to customize it for your use case, including:
 
-- Support for proxies
-- Custom transports
+- Support for [proxies](https://www.python-httpx.org/advanced/proxies/)
+- Custom [transports](https://www.python-httpx.org/advanced/transports/)
 - Additional [advanced](https://www.python-httpx.org/advanced/clients/) functionality
 
 ```python
+import httpx
 from crash_data_api import CrashDataAPI, DefaultHttpxClient
 
 client = CrashDataAPI(
     # Or use the `CRASH_DATA_API_BASE_URL` env var
     base_url="http://my.test.server.example.com:8083",
     http_client=DefaultHttpxClient(
-        proxies="http://my.test.proxy.example.com",
+        proxy="http://my.test.proxy.example.com",
         transport=httpx.HTTPTransport(local_address="0.0.0.0"),
     ),
     access_token="My Access Token",
@@ -365,17 +367,29 @@ client.with_options(http_client=DefaultHttpxClient(...))
 
 By default the library closes underlying HTTP connections whenever the client is [garbage collected](https://docs.python.org/3/reference/datamodel.html#object.__del__). You can manually close the client using the `.close()` method if desired, or with a context manager that closes when exiting.
 
+```py
+from crash_data_api import CrashDataAPI
+
+with CrashDataAPI(
+    access_token="My Access Token",
+) as client:
+  # make requests here
+  ...
+
+# HTTP client is now closed
+```
+
 ## Versioning
 
 This package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) conventions, though certain backwards-incompatible changes may be released as minor versions:
 
 1. Changes that only affect static types, without breaking runtime behavior.
-2. Changes to library internals which are technically public but not intended or documented for external use. _(Please open a GitHub issue to let us know if you are relying on such internals)_.
+2. Changes to library internals which are technically public but not intended or documented for external use. _(Please open a GitHub issue to let us know if you are relying on such internals.)_
 3. Changes that we do not expect to impact the vast majority of users in practice.
 
 We take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.
 
-We are keen for your feedback; please open an [issue](https://www.github.com/stainless-sdks/crash-data-api-python/issues) with questions, bugs, or suggestions.
+We are keen for your feedback; please open an [issue](https://www.github.com/Filimoa/crash-data-sdk/issues) with questions, bugs, or suggestions.
 
 ### Determining the installed version
 
@@ -390,7 +404,7 @@ print(crash_data_api.__version__)
 
 ## Requirements
 
-Python 3.7 or higher.
+Python 3.8 or higher.
 
 ## Contributing
 
