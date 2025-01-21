@@ -43,7 +43,7 @@ class CaTelematicsRiskScoresResource(SyncAPIResource):
     @cached_property
     def with_raw_response(self) -> CaTelematicsRiskScoresResourceWithRawResponse:
         """
-        This property can be used as a prefix for any HTTP method call to return the
+        This property can be used as a prefix for any HTTP method call to return
         the raw response object instead of the parsed content.
 
         For more information, see https://www.github.com/Filimoa/crash-data-sdk#accessing-raw-response-data-eg-headers
@@ -115,7 +115,7 @@ class AsyncCaTelematicsRiskScoresResource(AsyncAPIResource):
     @cached_property
     def with_raw_response(self) -> AsyncCaTelematicsRiskScoresResourceWithRawResponse:
         """
-        This property can be used as a prefix for any HTTP method call to return the
+        This property can be used as a prefix for any HTTP method call to return
         the raw response object instead of the parsed content.
 
         For more information, see https://www.github.com/Filimoa/crash-data-sdk#accessing-raw-response-data-eg-headers
