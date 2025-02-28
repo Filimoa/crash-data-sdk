@@ -88,7 +88,7 @@ class CrashDataAPI(SyncAPIClient):
         # part of our public interface in the future.
         _strict_response_validation: bool = False,
     ) -> None:
-        """Construct a new synchronous crash-data-api client instance.
+        """Construct a new synchronous CrashDataAPI client instance.
 
         This automatically infers the following arguments from their corresponding environment variables if they are not provided:
         - `auth_token` from `AUTH_TOKEN`
@@ -280,7 +280,7 @@ class AsyncCrashDataAPI(AsyncAPIClient):
         # part of our public interface in the future.
         _strict_response_validation: bool = False,
     ) -> None:
-        """Construct a new async crash-data-api client instance.
+        """Construct a new async AsyncCrashDataAPI client instance.
 
         This automatically infers the following arguments from their corresponding environment variables if they are not provided:
         - `auth_token` from `AUTH_TOKEN`
