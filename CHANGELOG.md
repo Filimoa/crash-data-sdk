@@ -1,5 +1,45 @@
 # Changelog
 
+## 0.1.0-alpha.1 (2025-03-14)
+
+Full Changelog: [v0.0.1-alpha.1...v0.1.0-alpha.1](https://github.com/Filimoa/crash-data-sdk/compare/v0.0.1-alpha.1...v0.1.0-alpha.1)
+
+### Features
+
+* **client:** allow passing `NotGiven` for body ([#54](https://github.com/Filimoa/crash-data-sdk/issues/54)) ([39d0e3b](https://github.com/Filimoa/crash-data-sdk/commit/39d0e3ba7b4b69b862b6f68f3108c1c63fc8baee))
+* **client:** send `X-Stainless-Read-Timeout` header ([#49](https://github.com/Filimoa/crash-data-sdk/issues/49)) ([9b81a7d](https://github.com/Filimoa/crash-data-sdk/commit/9b81a7d2c6d02e325c2565f14916b772194704ac))
+
+
+### Bug Fixes
+
+* asyncify on non-asyncio runtimes ([#53](https://github.com/Filimoa/crash-data-sdk/issues/53)) ([7cf4007](https://github.com/Filimoa/crash-data-sdk/commit/7cf40076a58e4cd37f8d61dffbf2644f78486e3b))
+* **client:** mark some request bodies as optional ([39d0e3b](https://github.com/Filimoa/crash-data-sdk/commit/39d0e3ba7b4b69b862b6f68f3108c1c63fc8baee))
+* **tests:** make test_get_platform less flaky ([#43](https://github.com/Filimoa/crash-data-sdk/issues/43)) ([6b90205](https://github.com/Filimoa/crash-data-sdk/commit/6b9020515a4f8eb1ac417158378f12392255d798))
+
+
+### Chores
+
+* **docs:** update client docstring ([#58](https://github.com/Filimoa/crash-data-sdk/issues/58)) ([4decf24](https://github.com/Filimoa/crash-data-sdk/commit/4decf247c956b83f7966347aecbb3645a35ef8a1))
+* **internal:** avoid pytest-asyncio deprecation warning ([#44](https://github.com/Filimoa/crash-data-sdk/issues/44)) ([ae00017](https://github.com/Filimoa/crash-data-sdk/commit/ae0001787af09f2935292d3e67e5f3a07ab4d4ae))
+* **internal:** bummp ruff dependency ([#48](https://github.com/Filimoa/crash-data-sdk/issues/48)) ([ee67db2](https://github.com/Filimoa/crash-data-sdk/commit/ee67db28d57be91e4bc23e26108bddbca8f491bb))
+* **internal:** change default timeout to an int ([#47](https://github.com/Filimoa/crash-data-sdk/issues/47)) ([84f066a](https://github.com/Filimoa/crash-data-sdk/commit/84f066a01829389e36ab98d7037c6f11133cd8ad))
+* **internal:** codegen related update ([#40](https://github.com/Filimoa/crash-data-sdk/issues/40)) ([7de7f8f](https://github.com/Filimoa/crash-data-sdk/commit/7de7f8ff4312b4a6dd4ba46fb9f615ce75784454))
+* **internal:** fix devcontainers setup ([#55](https://github.com/Filimoa/crash-data-sdk/issues/55)) ([de670c6](https://github.com/Filimoa/crash-data-sdk/commit/de670c6c2e1bb1c24e2afa8089c46da3c3b515f7))
+* **internal:** fix type traversing dictionary params ([#50](https://github.com/Filimoa/crash-data-sdk/issues/50)) ([f8b2cc7](https://github.com/Filimoa/crash-data-sdk/commit/f8b2cc7fe8ff7be4edad2a4748b88eb524034df5))
+* **internal:** minor formatting changes ([#46](https://github.com/Filimoa/crash-data-sdk/issues/46)) ([3e89b3c](https://github.com/Filimoa/crash-data-sdk/commit/3e89b3c991be26eaf64e9606e6e5c40ab8378a8b))
+* **internal:** minor style changes ([#45](https://github.com/Filimoa/crash-data-sdk/issues/45)) ([5b44719](https://github.com/Filimoa/crash-data-sdk/commit/5b44719c65e65f75c787a1a2cb471b1de9ff9a0e))
+* **internal:** minor type handling changes ([#51](https://github.com/Filimoa/crash-data-sdk/issues/51)) ([7e8d870](https://github.com/Filimoa/crash-data-sdk/commit/7e8d8702398136b3bf9a17c249d44b5b65e05d7c))
+* **internal:** properly set __pydantic_private__ ([#56](https://github.com/Filimoa/crash-data-sdk/issues/56)) ([46d98fe](https://github.com/Filimoa/crash-data-sdk/commit/46d98fee72b31cdaac0e8c998cedb1e5e5a15f67))
+* **internal:** remove extra empty newlines ([#61](https://github.com/Filimoa/crash-data-sdk/issues/61)) ([77240b3](https://github.com/Filimoa/crash-data-sdk/commit/77240b30ea93016d6142b389f1b485a2bf2b2456))
+* **internal:** remove unused http client options forwarding ([#59](https://github.com/Filimoa/crash-data-sdk/issues/59)) ([7d90126](https://github.com/Filimoa/crash-data-sdk/commit/7d90126f307d9c7c32f9ac5b069f1b14743013cf))
+* **internal:** update client tests ([#52](https://github.com/Filimoa/crash-data-sdk/issues/52)) ([c250a56](https://github.com/Filimoa/crash-data-sdk/commit/c250a562cee26b93d5ac4245cbb87c53a4e97484))
+
+
+### Documentation
+
+* **raw responses:** fix duplicate `the` ([#42](https://github.com/Filimoa/crash-data-sdk/issues/42)) ([6366be3](https://github.com/Filimoa/crash-data-sdk/commit/6366be362f24e775cc2bbf3e89c52f335564039d))
+* update URLs from stainlessapi.com to stainless.com ([#57](https://github.com/Filimoa/crash-data-sdk/issues/57)) ([9bcafdb](https://github.com/Filimoa/crash-data-sdk/commit/9bcafdb2fc44dbce4bf5541bd1f6b6b29052dd28))
+
 ## 0.0.1-alpha.1 (2025-01-10)
 
 Full Changelog: [v0.0.1-alpha.0...v0.0.1-alpha.1](https://github.com/Filimoa/crash-data-sdk/compare/v0.0.1-alpha.0...v0.0.1-alpha.1)
