@@ -6,6 +6,7 @@ import gc
 import os
 import sys
 import json
+import time
 import asyncio
 import inspect
 import subprocess
@@ -22,7 +23,7 @@ from pydantic import ValidationError
 
 from crash_data_api import CrashDataAPI, AsyncCrashDataAPI, APIResponseValidationError
 from crash_data_api._types import Omit
-from crash_data_api._utils import parse_datetime
+from crash_data_api._utils import parse_datetime, maybe_transform
 from crash_data_api._models import BaseModel, FinalRequestOptions
 from crash_data_api._constants import RAW_RESPONSE_HEADER
 from crash_data_api._exceptions import APIStatusError, APITimeoutError, APIResponseValidationError
@@ -32,6 +33,7 @@ from crash_data_api._base_client import (
     BaseClient,
     make_request_options,
 )
+from crash_data_api.types.aggregated_crash_aggregate_params import AggregatedCrashAggregateParams
 
 from .utils import update_env
 
@@ -789,14 +791,17 @@ class TestCrashDataAPI:
                 "/v1/crash-data/aggregate",
                 body=cast(
                     object,
-                    dict(
-                        distance_km=2,
-                        end_date=parse_datetime("2019-12-27T18:11:19.117Z"),
-                        location={
-                            "lat": 24.396308,
-                            "long": -125,
-                        },
-                        start_date=parse_datetime("2019-12-27T18:11:19.117Z"),
+                    maybe_transform(
+                        dict(
+                            distance_km=2,
+                            end_date=parse_datetime("2019-12-27T18:11:19.117Z"),
+                            location={
+                                "lat": 24.396308,
+                                "long": -125,
+                            },
+                            start_date=parse_datetime("2019-12-27T18:11:19.117Z"),
+                        ),
+                        AggregatedCrashAggregateParams,
                     ),
                 ),
                 cast_to=httpx.Response,
@@ -815,14 +820,17 @@ class TestCrashDataAPI:
                 "/v1/crash-data/aggregate",
                 body=cast(
                     object,
-                    dict(
-                        distance_km=2,
-                        end_date=parse_datetime("2019-12-27T18:11:19.117Z"),
-                        location={
-                            "lat": 24.396308,
-                            "long": -125,
-                        },
-                        start_date=parse_datetime("2019-12-27T18:11:19.117Z"),
+                    maybe_transform(
+                        dict(
+                            distance_km=2,
+                            end_date=parse_datetime("2019-12-27T18:11:19.117Z"),
+                            location={
+                                "lat": 24.396308,
+                                "long": -125,
+                            },
+                            start_date=parse_datetime("2019-12-27T18:11:19.117Z"),
+                        ),
+                        AggregatedCrashAggregateParams,
                     ),
                 ),
                 cast_to=httpx.Response,
@@ -1674,14 +1682,17 @@ class TestAsyncCrashDataAPI:
                 "/v1/crash-data/aggregate",
                 body=cast(
                     object,
-                    dict(
-                        distance_km=2,
-                        end_date=parse_datetime("2019-12-27T18:11:19.117Z"),
-                        location={
-                            "lat": 24.396308,
-                            "long": -125,
-                        },
-                        start_date=parse_datetime("2019-12-27T18:11:19.117Z"),
+                    maybe_transform(
+                        dict(
+                            distance_km=2,
+                            end_date=parse_datetime("2019-12-27T18:11:19.117Z"),
+                            location={
+                                "lat": 24.396308,
+                                "long": -125,
+                            },
+                            start_date=parse_datetime("2019-12-27T18:11:19.117Z"),
+                        ),
+                        AggregatedCrashAggregateParams,
                     ),
                 ),
                 cast_to=httpx.Response,
@@ -1700,14 +1711,17 @@ class TestAsyncCrashDataAPI:
                 "/v1/crash-data/aggregate",
                 body=cast(
                     object,
-                    dict(
-                        distance_km=2,
-                        end_date=parse_datetime("2019-12-27T18:11:19.117Z"),
-                        location={
-                            "lat": 24.396308,
-                            "long": -125,
-                        },
-                        start_date=parse_datetime("2019-12-27T18:11:19.117Z"),
+                    maybe_transform(
+                        dict(
+                            distance_km=2,
+                            end_date=parse_datetime("2019-12-27T18:11:19.117Z"),
+                            location={
+                                "lat": 24.396308,
+                                "long": -125,
+                            },
+                            start_date=parse_datetime("2019-12-27T18:11:19.117Z"),
+                        ),
+                        AggregatedCrashAggregateParams,
                     ),
                 ),
                 cast_to=httpx.Response,
@@ -1849,10 +1863,20 @@ class TestAsyncCrashDataAPI:
             [sys.executable, "-c", test_code],
             text=True,
         ) as process:
-            try:
-                process.wait(2)
-                if process.returncode:
-                    raise AssertionError("calling get_platform using asyncify resulted in a non-zero exit code")
-            except subprocess.TimeoutExpired as e:
-                process.kill()
-                raise AssertionError("calling get_platform using asyncify resulted in a hung process") from e
+            timeout = 10  # seconds
+
+            start_time = time.monotonic()
+            while True:
+                return_code = process.poll()
+                if return_code is not None:
+                    if return_code != 0:
+                        raise AssertionError("calling get_platform using asyncify resulted in a non-zero exit code")
+
+                    # success
+                    break
+
+                if time.monotonic() - start_time > timeout:
+                    process.kill()
+                    raise AssertionError("calling get_platform using asyncify resulted in a hung process")
+
+                time.sleep(0.1)
